@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+/*
+    @min- definition of min
+    @arr-array
+    @return- returning minimum of array
+ */
 public class task1 {
 
     public static void main() {
@@ -9,20 +14,20 @@ public class task1 {
         for (int i = 0; i < n; i++) {
             arr[i] = scanner.nextInt();
         }
-        int min = findMinimum(arr, n);
+        int min = findMinimumInArray(arr, n);
         System.out.println(min);
     }
-    public static int findMinimum(int[] arr, int n) {
+    public static int findMinimumInArray(int[] arr, int n) {
 
         if (n == 1) {
-            return arr[0];
+            return arr[0]; //Base case: array with one element
         }
 
-        int min = findMinimum(arr, n - 1);
-        if (min < arr[n - 1]) {
+        int min = findMinimumInArray(arr, n - 1); //move with "n-1" length
+        if (min < arr[n - 1]) {  //compare minimum with last element and so on
             return min;
         } else {
-            return arr[n - 1];
+            return arr[n - 1]; //return last element as minimum
         }
     }
 
