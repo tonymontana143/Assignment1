@@ -1,9 +1,5 @@
 import java.util.Scanner;
-/*
-        @result-definition of factorial
-        @n-inputted number
-        @return-returning factorial
- */
+
 
 public class task4 {
     public static void main() {
@@ -12,7 +8,11 @@ public class task4 {
         int result = FindFactorial(n);
         System.out.println(result);
     }
-
+    /*
+            @result-definition of factorial
+            @n-inputted number
+            @return-returning factorial
+     */
     public static int FindFactorial(int n) {
         if (n == 0 || n == 1) {     //Base case: Factorial of 0 and 1 equal to one
             return 1;

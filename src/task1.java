@@ -1,10 +1,6 @@
 import java.util.Scanner;
 
-/*
-    @min- definition of min
-    @arr-array
-    @return- returning minimum of array
- */
+
 public class task1 {
 
     public static void main() {
@@ -17,6 +13,11 @@ public class task1 {
         int min = findMinimumInArray(arr, n);
         System.out.println(min);
     }
+    /*
+        @min- definition of min
+        @arr-array
+        @return- returning minimum of array
+     */
     public static int findMinimumInArray(int[] arr, int n) {
 
         if (n == 1) {

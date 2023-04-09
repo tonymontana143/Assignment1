@@ -1,9 +1,5 @@
 import java.util.Scanner;
-/*
-        @n-inputted number
-        @return-returning False or True, since we have boolean
-        @i-square root of number
- */
+
 public class task3 {
 
     public static void main() {
@@ -19,7 +15,11 @@ public class task3 {
             System.out.println("Composite");//Otherwise, our number is composite
         }
     }
-
+    /*
+            @n-inputted number
+            @return-returning False or True, since we have boolean
+            @i-square root of number
+     */
     public static boolean isPrime(int n, int i) {
         if (i == 1) {
             return true;    //Base case: if sqrt of our number equal to one

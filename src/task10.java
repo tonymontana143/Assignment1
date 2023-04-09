@@ -1,9 +1,5 @@
 import java.util.Scanner;
-/*
-        @a,b-inputted numbers
-        @res-GCD of numbers
-        @return- returning result
- */
+
 public class task10 {
     public static void main() {
         Scanner scanner=new Scanner(System.in);
@@ -12,7 +8,11 @@ public class task10 {
         int res=findGCD(a,b);
         System.out.println(res);
     }
-
+    /*
+            @a,b-inputted numbers
+            @res-GCD of numbers
+            @return- returning result
+     */
     public static int findGCD(int a, int b) {
         if (b == 0) {   //Base case, if b equal to 0
             return a;

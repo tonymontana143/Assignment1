@@ -1,10 +1,5 @@
 import java.util.Scanner;
-/*
-        @arr-array
-        @n-number of elements
-        @arr[first]-first element of array
-        @arr[last]-last element of array
- */
+
 public class task7 {
     public static void main() {
         Scanner sc = new Scanner(System.in);
@@ -18,6 +13,12 @@ public class task7 {
             System.out.print(arr[i] + " ");     //print reversed array
         }
     }
+    /*
+            @arr-array
+            @n-number of elements
+            @arr[first]-first element of array
+            @arr[last]-last element of array
+     */
     public static void WriteReverseOfArray(int[] arr, int first, int last) {
         if (first >= last) {        //Base case
             return;

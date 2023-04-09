@@ -1,8 +1,5 @@
 import java.util.Scanner;
-/*
-    @n,k-inputted numbers
-    @return- returning binomial coefficient
- */
+
 public class task9 {
     public static void main() {
         Scanner sc = new Scanner(System.in);
@@ -10,7 +7,10 @@ public class task9 {
         int k = sc.nextInt();
         System.out.println(findBinomialCoefficent(n,k));
     }
-
+    /*
+        @n,k-inputted numbers
+        @return- returning binomial coefficient
+     */
     public static int findBinomialCoefficent(int n, int k) {
         if (k == 0 || k == n) {     //Base case: if k is 0 or equal n, return 1
             return 1;

@@ -1,10 +1,5 @@
 import java.util.Scanner;
-/*
-        @avg- definition of average
-        @arr-array
-        @n-number of elements in an array
-        @return-returning average number
- */
+
 public class task2 {
     public static void main() {
         Scanner input = new Scanner(System.in);
@@ -18,7 +13,12 @@ public class task2 {
         double avg = calculateAverage(arr, n);
         System.out.println(avg);
     }
-
+    /*
+    @avg- definition of average
+    @arr-array
+    @n-number of elements in an array
+    @return-returning average number
+*/
     public static double calculateAverage(int[] arr, int n) {
         if (n == 0) {       //Base case: if no elements, returns 0
             return 0;
