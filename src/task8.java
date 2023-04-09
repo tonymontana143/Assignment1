@@ -2,17 +2,29 @@ import java.util.Scanner;
 public class task8 {
     public static void main() {
         Scanner scanner=new Scanner(System.in);
-        int b = scanner.nextInt();
-        int a = scanner.nextInt();
-        int res=findGCD(a,b);
-        System.out.println(res);
+        String n=scanner.nextLine();
     }
-
-    public static int findGCD(int a, int b) {
-        if (b == 0) {
-            return a;
-        } else {
-            return findGCD(b, a % b);
+    public static String LoopForCheck(String letter){
+        return CheckString(letter.split(""),0,letter.length());
+    }
+    static String CheckString(String[] arr,int position,int stop){
+        if(position<stop){
+            if(isNum(arr[position])){
+                return CheckString(arr,position+1,stop);
+            }else{
+                return "NO";
+            }
+        }
+        return "Yes";
+    }
+    static boolean isNum(String s){
+        try{
+            Integer.parseInt(s);
+            return true;
+        }
+        catch (NumberFormatException e){
+            return false;
         }
     }
+
 }
